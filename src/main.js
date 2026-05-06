@@ -9,7 +9,9 @@ async function main() {
    
     const response = await fetch(`https://api.github.com/users/${nome}`)
     const json = await response.json();
-    //console.log(`Your GitHub profile: ${json().html_url}`);
+    console.log(`Your GitHub profile: 
+        ${json.html_url} \n 
+        ${json.name} has ${json.public_repos} public repositories.`);
     console.log(json);
     
     terminalWindow.close();
