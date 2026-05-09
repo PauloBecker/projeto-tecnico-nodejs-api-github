@@ -11,4 +11,4 @@ function nossoFind(lista, funcaoCondicao) {
 }
 
 console.log(nossoFind(["banana", "maçã", "uva", "abacaxi", "laranja", "manga", "maracujá"], x => x.length > 6));
-console.log(nossoFind([1, 81, 3, 4, 99, 6, 45], x => x < 4));
+console.log(nossoFind([1, 81, 3, 4, 99, 6, 45], x => x > 4));
